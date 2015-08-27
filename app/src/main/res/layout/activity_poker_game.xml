@@ -1,0 +1,55 @@
+<RelativeLayout
+    android:id="@+id/player_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.awakeplace.pokerchipsmanager.PokerGameActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/black_border"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/deal_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="dealButtonClicked"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/raise_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="raiseButtonClicked"
+            android:text="Raise"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/call_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="callButtonClicked"
+            android:text="Check/Call"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/fold_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="foldButtonClicked"
+            android:text="Fold"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+</RelativeLayout>

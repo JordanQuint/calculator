@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="select_game_0" type="id" />
+    <item name="select_game_1" type="id" />
+    <item name="select_game_2" type="id" />
+    <item name="select_game_3" type="id" />
+    <item name="select_game_4" type="id" />
+
+    <!-- Player rows in PokerGameActivity -->
+    <item name="row0" type="id" />
+    <item name="row1" type="id" />
+    <item name="row2" type="id" />
+    <item name="row3" type="id" />
+    <item name="row4" type="id" />
+
+    <!-- Player boxes in PokerGameActivity -->
+    <item name="player0" type="id" />
+    <item name="player1" type="id" />
+    <item name="player2" type="id" />
+    <item name="player3" type="id" />
+    <item name="player4" type="id" />
+    <item name="player5" type="id" />
+    <item name="player6" type="id" />
+    <item name="player7" type="id" />
+    <item name="player8" type="id" />
+    <item name="player9" type="id" />
+
+    <!-- Player chip amounts in PokerGameActivity -->
+    <item name="chips0" type="id" />
+    <item name="chips1" type="id" />
+    <item name="chips2" type="id" />
+    <item name="chips3" type="id" />
+    <item name="chips4" type="id" />
+    <item name="chips5" type="id" />
+    <item name="chips6" type="id" />
+    <item name="chips7" type="id" />
+    <item name="chips8" type="id" />
+    <item name="chips9" type="id" />
+
+    <!-- Player chips_in amount in PokerGameActivity, used to show amount of bet put towards the pot this round -->
+    <item name="chips_in0" type="id" />
+    <item name="chips_in1" type="id" />
+    <item name="chips_in2" type="id" />
+    <item name="chips_in3" type="id" />
+    <item name="chips_in4" type="id" />
+    <item name="chips_in5" type="id" />
+    <item name="chips_in6" type="id" />
+    <item name="chips_in7" type="id" />
+    <item name="chips_in8" type="id" />
+    <item name="chips_in9" type="id" />
+
+    <item name="pots" type="id" />
+    <item name="Dealer" type="id" />
+    <item name="BigBlind" type="id" />
+    <item name="SmallBlind" type="id" />
+    <item name="RaiseBet" type="id" />
+</resources>

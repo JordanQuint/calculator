@@ -1,0 +1,472 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.awakeplace.pokerchipsmanager.CreateGame"
+    android:nestedScrollingEnabled="false"
+    android:background="@drawable/green_felt"
+    android:backgroundTint="#cccccc"
+    android:backgroundTintMode="multiply"
+    style="@android:style/ThemeOverlay.Material.Dark">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="45dp"
+        android:id="@+id/scrollView"
+        android:fillViewport="true">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                android:id="@+id/table_layout">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/player_title_row">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/players_title"
+                        android:layout_column="0"
+                        android:textColor="@android:color/black"
+                        android:textSize="25dp"
+                        android:paddingStart="100dp"
+                        android:text="Players (4)"
+                        android:background="@drawable/abc_textfield_activated_mtrl_alpha" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:id="@+id/player_setting"
+                    android:paddingTop="5dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:id="@+id/player_layout"
+                        android:paddingStart="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="2"
+                            android:id="@+id/min_players"
+                            android:layout_column="0"
+                            android:singleLine="false"
+                            android:textColor="@android:color/black"
+                            android:nestedScrollingEnabled="false"
+                            android:textSize="25dp" />
+
+                        <SeekBar
+                            android:layout_width="254dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/players"
+                            android:max="8"
+                            android:layout_column="0"
+                            android:paddingStart="10dp"
+                            android:paddingRight="10dp"
+                            android:progress="2"
+                            android:minWidth="300dp"
+                            android:secondaryProgress="2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="10"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/max_players"
+                            android:layout_column="0"
+                            android:textSize="25dp" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/names_title_row">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Names"
+                        android:id="@+id/textView2"
+                        android:layout_column="0"
+                        android:textColor="@android:color/black"
+                        android:textAlignment="center"
+                        android:paddingStart="125dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/names"
+                    style="@android:style/Theme.Material"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:id="@+id/player_names">
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="72dp"
+                            android:layout_column="0"
+                            android:id="@+id/name_row1"
+                            android:paddingTop="15dp">
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="160dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:id="@+id/player_name1">
+                                <EditText
+                                    android:maxLength="20"
+                                    android:id="@+id/player1"
+                                    android:layout_width="140dp"
+                                    android:layout_height="40dp"
+                                    style="@android:style/Widget.Material.Light.EditText"
+                                    android:background="@drawable/abc_edit_text_material"
+                                    android:autoText="false" />
+                                <TextView
+                                    android:id="@+id/player1_desc"
+                                    android:layout_width="140dp"
+                                    android:layout_height="30dp"
+                                    android:textColor="@android:color/black"
+                                    android:paddingStart="40dp"
+                                    android:text="Player 1"
+                                    style="@android:style/Widget.Material.Light.TextView" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="160dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:id="@+id/player_name2">
+                                <EditText
+                                    android:maxLength="20"
+                                    android:id="@+id/player2"
+                                    android:layout_width="140dp"
+                                    android:layout_height="40dp"
+                                    style="@android:style/Widget.Material.Light.EditText"
+                                    android:background="@drawable/abc_edit_text_material" />
+                                <TextView
+                                    android:id="@+id/player2_desc"
+                                    android:layout_width="140dp"
+                                    android:layout_height="30dp"
+                                    android:paddingStart="40dp"
+                                    android:textColor="@android:color/black"
+                                    android:text="Player 2"
+                                    style="@android:style/Widget.Material.Light.TextView" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_column="0"
+                            android:id="@+id/name_row2">
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="160dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:id="@+id/player_name3">
+                                <EditText
+                                    android:maxLength="20"
+                                    android:id="@+id/player3"
+                                    android:layout_width="140dp"
+                                    android:layout_height="40dp"
+                                    style="@android:style/Widget.Material.Light.EditText"
+                                    android:background="@drawable/abc_edit_text_material" />
+                                <TextView
+                                    android:id="@+id/player3_desc"
+                                    android:layout_width="140dp"
+                                    android:textColor="@android:color/black"
+                                    android:layout_height="30dp"
+                                    android:paddingStart="40dp"
+                                    android:text="Player 3"
+                                    style="@android:style/Widget.Material.Light.TextView" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="160dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:id="@+id/player_name4">
+                                <EditText
+                                    android:maxLength="20"
+                                    android:id="@+id/player4"
+                                    android:layout_width="140dp"
+                                    android:layout_height="40dp"
+                                    style="@android:style/Widget.Material.Light.EditText"
+                                    android:background="@drawable/abc_edit_text_material" />
+                                <TextView
+                                    android:id="@+id/player4_desc"
+                                    android:layout_width="140dp"
+                                    android:textColor="@android:color/black"
+                                    android:layout_height="30dp"
+                                    android:paddingStart="40dp"
+                                    android:text="Player 4"
+                                    style="@android:style/Widget.Material.Light.TextView" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_column="0"
+                            android:id="@+id/name_row3"
+                            android:visibility="gone">
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="160dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:visibility="gone"
+                                android:id="@+id/player_name5">
+                                <EditText
+                                    android:maxLength="20"
+                                    android:id="@+id/player5"
+                                    android:layout_width="140dp"
+                                    android:layout_height="40dp"
+                                    style="@android:style/Widget.Material.Light.EditText"
+                                    android:background="@drawable/abc_edit_text_material" />
+                                <TextView
+                                    android:id="@+id/player5_desc"
+                                    android:layout_width="140dp"
+                                    android:textColor="@android:color/black"
+                                    android:layout_height="30dp"
+                                    android:paddingStart="40dp"
+                                    android:text="Player 5"
+                                    style="@android:style/Widget.Material.Light.TextView" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="160dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:visibility="gone"
+                                android:id="@+id/player_name6">
+                                <EditText
+                                    android:maxLength="20"
+                                    android:id="@+id/player6"
+                                    android:layout_width="140dp"
+                                    android:layout_height="40dp"
+                                    style="@android:style/Widget.Material.Light.EditText"
+                                    android:background="@drawable/abc_edit_text_material" />
+                                <TextView
+                                    android:id="@+id/player6_desc"
+                                    android:layout_width="140dp"
+                                    android:textColor="@android:color/black"
+                                    android:layout_height="30dp"
+                                    android:paddingStart="40dp"
+                                    android:text="Player 6"
+                                    style="@android:style/Widget.Material.Light.TextView" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_column="0"
+                            android:id="@+id/name_row4"
+                            android:visibility="gone">
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="160dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:visibility="gone"
+                                android:id="@+id/player_name7">
+                                <EditText
+                                    android:maxLength="20"
+                                    android:id="@+id/player7"
+                                    android:layout_width="140dp"
+                                    android:layout_height="40dp"
+                                    style="@android:style/Widget.Material.Light.EditText"
+                                    android:background="@drawable/abc_edit_text_material" />
+                                <TextView
+                                    android:id="@+id/player7_desc"
+                                    android:layout_width="140dp"
+                                    android:textColor="@android:color/black"
+                                    android:layout_height="30dp"
+                                    android:paddingStart="40dp"
+                                    android:text="Player 7"
+                                    style="@android:style/Widget.Material.Light.TextView" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="160dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:visibility="gone"
+                                android:id="@+id/player_name8">
+                                <EditText
+                                    android:maxLength="20"
+                                    android:id="@+id/player8"
+                                    android:layout_width="140dp"
+                                    android:layout_height="40dp"
+                                    style="@android:style/Widget.Material.Light.EditText"
+                                    android:background="@drawable/abc_edit_text_material" />
+                                <TextView
+                                    android:id="@+id/player8_desc"
+                                    android:layout_width="140dp"
+                                    android:textColor="@android:color/black"
+                                    android:layout_height="30dp"
+                                    android:paddingStart="40dp"
+                                    android:text="Player 8"
+                                    style="@android:style/Widget.Material.Light.TextView" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_column="0"
+                            android:id="@+id/name_row5"
+                            android:visibility="gone">
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="160dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:visibility="gone"
+                                android:id="@+id/player_name9">
+                                <EditText
+                                    android:maxLength="20"
+                                    android:id="@+id/player9"
+                                    android:layout_width="140dp"
+                                    android:layout_height="40dp"
+                                    style="@android:style/Widget.Material.Light.EditText"
+                                    android:background="@drawable/abc_edit_text_material" />
+                                <TextView
+                                    android:id="@+id/player9_desc"
+                                    android:layout_width="140dp"
+                                    android:textColor="@android:color/black"
+                                    android:layout_height="30dp"
+                                    android:paddingStart="40dp"
+                                    android:text="Player 9"
+                                    style="@android:style/Widget.Material.Light.TextView" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="160dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="0"
+                                android:visibility="gone"
+                                android:id="@+id/player_name10">
+                                <EditText
+                                    android:maxLength="20"
+                                    android:id="@+id/player10"
+                                    android:layout_width="140dp"
+                                    android:layout_height="40dp"
+                                    style="@android:style/Widget.Material.Light.EditText"
+                                    android:background="@drawable/abc_edit_text_material" />
+                                <TextView
+                                    android:id="@+id/player10_desc"
+                                    android:layout_width="140dp"
+                                    android:textColor="@android:color/black"
+                                    android:layout_height="30dp"
+                                    android:paddingStart="40dp"
+                                    android:text="Player 10"
+                                    style="@android:style/Widget.Material.Light.TextView" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Starting Chips (for each player)"
+                        android:id="@+id/textView3"
+                        android:layout_column="0"
+                        android:paddingTop="20dp"
+                        style="@android:style/TextAppearance.Material.Widget.TextView"
+                        android:textSize="18dp"
+                        android:background="@drawable/abc_textfield_activated_mtrl_alpha" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/starting_chips"
+                        android:spinnerMode="dialog"
+                        android:textColor="@android:color/black"
+                        android:touchscreenBlocksFocus="false"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        style="@android:style/Widget.Material.Light.DropDownItem.Spinner" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Big Blind\n2 chips"
+                            android:id="@+id/bigBlind"
+                            android:layout_column="0"
+                            android:paddingStart="10dp"
+                            style="@android:style/TextAppearance.Material.Widget.TextView"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Small Blind\n1 chips"
+                            android:id="@+id/smallBlind"
+                            android:layout_column="1"
+                            style="@android:style/TextAppearance.Material.Widget.TextView"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+    </ScrollView>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Game"
+        android:id="@+id/button"
+        android:layout_column="0"
+        android:textSize="16dp"
+        android:onClick="startGame"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

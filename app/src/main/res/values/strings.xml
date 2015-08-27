@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Poker Chips Manager</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_create_game">Create Game</string>
+    <string-array name="starting_chips">
+        <item>200</item>
+        <item>500</item>
+        <item>1,000</item>
+        <item>5,000</item>
+        <item>10,000</item>
+    </string-array>
+    <string name="saved_games">com.example.jordanquint.pokerchipsmanager.SAVED_GAMES</string>
+    <string name="title_activity_poker_game">Poker Game Activity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_select_game">SelectGame</string>
+    <integer name="game_slots">5</integer>
+    <integer name="name_length">20</integer>
+    <integer name="STATIC_RAISE_BET">1</integer>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_poker_raise_bet">PokerRaiseBet</string>
+    <string name="title_activity_pick_winner">PickWinner</string>
+</resources>

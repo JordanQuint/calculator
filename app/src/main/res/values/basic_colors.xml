@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="gray" type="color" format="color">#888888</item>
+    <item name="black" type="color" format="color">#000000</item>
+    <item name="red" type="color" format="color">#FF0000</item>
+    <item name="dealer" type="color" format="color">#FF0000</item>
+    <item name="bigBlind" type="color" format="color">#00FF00</item>
+    <item name="smallBlind" type="color" format="color">#0000FF</item>
+</resources>
